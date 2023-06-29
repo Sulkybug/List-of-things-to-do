@@ -56,7 +56,7 @@ function addListItem(task: Task) {
   clear.addEventListener("click", () => {
     // if (item) {
     //let check = confirm("This will delete all your list");
-    confirmPage.style.display = "flex";
+    confirmPage?.setAttribute("style", "display:flex");
   });
 
   confirmBtn.addEventListener("click", () => {
@@ -65,7 +65,7 @@ function addListItem(task: Task) {
   });
 
   cancelBtn.addEventListener("click", () => {
-    confirmPage.style.display = "none";
+    confirmPage?.setAttribute("style", "display:none");
   });
 
   checkbox.type = "checkbox";
