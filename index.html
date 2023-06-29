@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="src/main.ts" type="module"></script>
+    <link rel="icon" href="/to-do-list.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>List of Things to do</title>
+  </head>
+  <body>
+    <header><h1>Things to do ✔</h1></header>
+    <main>
+      <div class="content">
+      <ul id="list"></ul>
+      <form id="new-task-form">
+        <input type="text" id="new-task-title" />
+        <button type="submit" id="add">Add +</button>
+        <button id="clear" type="button">Clear List</button>
+      </div>
+      </form>
+      <div class="confirmPage">
+        <div class="confirmBox">
+        <p class="confirmP">This will delete all your list</p>
+        <div>
+        <button id="confirm" type="button"> Confirm</button>
+        <button id="cancel" type="button">Cancel</button>
+      </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <p>© SulkyBug</p>
+    </footer>
+  </body>
+</html>
